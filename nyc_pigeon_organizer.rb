@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
           new_hash[name][category] << key
         else
           new_hash[name] = {color: [], gender: [], lives: []}
+          new_hash[name][category] << key
         end
       end
     end
