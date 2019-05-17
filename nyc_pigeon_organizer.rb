@@ -25,10 +25,10 @@ def nyc_pigeon_organizer(data)
     value.each do |key, names|
       names.each do |name|
         if new_hash.keys.include?(name)
-          new_hash[name][category] << key
+          new_hash[name][category] << key.to_s
         else
           new_hash[name] = {color: [], gender: [], lives: []}
-          new_hash[name][category] << key
+          new_hash[name][category] << key.to_s
         end
         binding.pry
       end
