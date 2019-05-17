@@ -30,11 +30,11 @@ def nyc_pigeon_organizer(data)
           new_hash[name] = {color: [], gender: [], lives: []}
           new_hash[name][category] << key.to_s
         end
-        binding.pry
+        #binding.pry
       end
     end
   end
   return new_hash
 end
 
-nyc_pigeon_organizer(pigeon_data)
+#nyc_pigeon_organizer(pigeon_data)
